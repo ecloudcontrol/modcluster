@@ -1,0 +1,25 @@
+app:
+    name: ModCluster
+    code: MODCLUSTER
+    notify: appzdev@cloudbourne.co
+    
+build:
+    version: 1.3
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: modcluster-1.3
+    image_name: alpha/modcluster
+    
+deploy:
+    context: alpha/DEV
+    replicas: 1
+    port:
+    - 6666
+   
+monitor:
+    notify: appzops@cloudbourne.co  
+    
+properties:
+    revision : 11
+    
