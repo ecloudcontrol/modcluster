@@ -22,7 +22,7 @@ monitor:
     notify: appzops@cloudbourne.co  
     
 properties:
-    MODCLUSTER_NET: 10
-    MODCLUSTER_MANAGER_NET: 10
+    MODCLUSTER_NET: 172
+    MODCLUSTER_MANAGER_NET: 172
     revision : 24
     
